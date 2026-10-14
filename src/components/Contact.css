@@ -78,11 +78,6 @@
   resize: vertical;
 }
 
-@media (max-width: 860px) {
-  .contact__grid {
-    grid-template-columns: 1fr;
-  }
-}
 .contact__form .btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -100,4 +95,10 @@
 
 .contact__status--error {
   color: #ff6b6b;
+}
+
+@media (max-width: 860px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
 }
