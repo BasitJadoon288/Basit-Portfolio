@@ -1,0 +1,39 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+}
+
+.about__text p {
+  margin-bottom: 14px;
+  color: var(--muted);
+}
+
+.about__info li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.about__info li:last-child {
+  border-bottom: 0;
+}
+
+.about__info li span:first-child {
+  color: var(--muted);
+}
+
+.about__info li span:last-child {
+  text-align: right;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+}
